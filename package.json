@@ -1,18 +1,14 @@
 {
-  "name": "sls-sample-app",
+  "name": "loopback-example-app",
   "version": "3.0.0",
   "description": "LoopBack Sample Application",
   "main": "server/server.js",
-  "scripts": {
-    "run": "node .",
-    "test": "mocha -b -R spec"
-  },
   "dependencies": {
     "async": "~0.9.0",
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
     "loopback": "~2.0.0-beta5",
-    "loopback-boot": "~2.0.0-beta1",
+    "loopback-boot": "~2.0.0-beta2",
     "loopback-connector-rest": "^1.1.4",
     "loopback-datasource-juggler": "~2.0.0-beta2",
     "request": "^2.37.0",
@@ -38,5 +34,9 @@
   "license": {
     "name": "MIT",
     "url": "https://github.com/strongloop/sls-sample-app/blob/master/LICENSE"
+   },
+  "scripts": {
+    "test": "mocha -R spec server/test",
+    "pretest": "jshint ."
   }
 }
