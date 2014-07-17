@@ -1,6 +1,7 @@
 /**
  * App Dependencies.
  */
+***
 
 var loopback = require('loopback')
   , app = module.exports = loopback()
